@@ -1,3 +1,13 @@
+<?php
+// the message
+$msg = "First line of text\nSecond line of text";
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+mail("someone@example.com","My subject",$msg);
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -229,18 +239,18 @@
                 <div class="row">
                     <div class="contact-content">
                         <div class="contact-text">
-                            <p>Alamat domisili saya di Bonjotan, Sleman, DIY.</p>
+                            <p><span><a href="https://goo.gl/maps/Mto74ZSRzx6Fk3G36" class="link-item">Berdomisili di Jl. Bonjotan, Candirejo, Kec. Ngaglik, Kab. Sleman, DIY.</a></span></p>
                         </div>
                         <div class="contact-info-item">
-                            <p>Email saya <span>fbbkrnwn@gmail.com</span></p>
+                            <p>Email <span>fbbkrnwn@gmail.com</span></p>
                         </div>
                         <div class="contact-info-item">
                             <p class="social-links">
                                 <span>temukan saya di</span>
-                                <a href="#" class="fab fa-facebook"></a>
-                                <a href="#" class="fab fa-twitter"></a>
-                                <a href="#" class="fab fa-instagram"></a>
-                                <a href="#" class="fab fa-youtube"></a>
+                                <a href="mailto:fbbkrnwn@gmail.com?subject=Tanya" class="fas fa-envelope"></a>
+                                <a href="https://www.instagram.com/nocturnal.29/" class="fab fa-instagram"></a>
+                                <a href="https://github.com/fbbkrnwn" class="fab fa-github"></a>
+                                <a href="http://www.linkedin.com/in/fbbkrnwn" class="fab fa-linkedin-in"></a>
                             </p>
                         </div>
                         <button type="button" class="btn toggle-contact-form-btn">Kirim Pesan</button>
@@ -262,7 +272,7 @@
                                             <textarea type="text" placeholder="Pesan" class="input-control"></textarea>
                                         </div>
                                         <div class="input-group">
-                                            <button class="btn btn-submit">Kirim</button>
+                                            <a  href="mailto:fbbkrnwn@gmail.com?subject=tanyaFebb.dev&body=Halo, perkenalkan nama: , No.HP: , Pesan: . Terimakasih" class="btn btn-submit">Kirim</a>
                                         </div>
                                     </div>
                                 </form>

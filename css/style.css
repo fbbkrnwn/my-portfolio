@@ -817,8 +817,28 @@ button{
     text-align: center;
     padding: 0 15px;
 }
-.contact-text{
-    margin-bottom: 30px;
+.contact-text p span{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.contact-text p a{
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
+}
+.contact-text p a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0%;
+    background-color: var(--main-color);
+    transition: width 0.3s ease;
+}
+.contact-text p a:hover:before{
+    width: 100%;
 }
 .contact-info-item{
     margin-bottom: 10px;
