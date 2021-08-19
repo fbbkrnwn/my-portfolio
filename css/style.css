@@ -232,7 +232,6 @@ button{
     transition: transform 0.6s ease 0.4s;
 }
 .page-loader-inner{
-    background-color: red;
     display: flex;
     align-items: center;
 }
