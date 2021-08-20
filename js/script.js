@@ -68,7 +68,7 @@ filterBtnsContainer.addEventListener("click", (e) =>{
         e.target.classList.add("active");
         toggleBodyScrolling();
         document.querySelector(".filter-status").classList.add("active");
-        document.querySelector(".filter-status p").innerHTML = `filtering <span>${e.target.innerHTML}</span> works`;
+        document.querySelector(".filter-status p").innerHTML = `di filter berdasarkan <span>${e.target.innerHTML}</span>`;
         setTimeout(() => {
             filterItems(e.target);
         }, 400);
